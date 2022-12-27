@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <UserSecretsId>GitAPIWatchLogs</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Spatial" Version="7.12.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.4.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WarchDog.Application.Main\WarchDog.Application.Main.csproj" />
+    <ProjectReference Include="..\WatchDog.Application.DTO\WatchDog.Application.DTO.csproj" />
+    <ProjectReference Include="..\WatchDog.Application.Interfce\WatchDog.Application.Interface.csproj" />
+    <ProjectReference Include="..\WatchDog.Application.Validator\WatchDog.Application.Validator.csproj" />
+    <ProjectReference Include="..\WatchDog.Domain.Cors\WatchDog.Domain.Cors.csproj" />
+    <ProjectReference Include="..\WatchDog.Domain.Entity\WatchDog.Domain.Entity.csproj" />
+    <ProjectReference Include="..\WatchDog.Domain.Interfaces\WatchDog.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\WatchDog.Infrastructure.Repository\WatchDog.Infrastructure.Repository.csproj" />
+    <ProjectReference Include="..\WatchDog.Transversal.Common\WatchDog.Transversal.Common.csproj" />
+  </ItemGroup>
+
+</Project>
